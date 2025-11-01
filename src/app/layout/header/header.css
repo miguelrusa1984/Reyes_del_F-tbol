@@ -1,6 +1,7 @@
 .navbar{
-                                                  
-    height: 170px;
+    height: 170px; 
+    background-image: linear-gradient(to right, blue, rgb(255, 72, 0));
+    
 }
 .titulo1 {
     color: orange;
@@ -47,37 +48,32 @@
 .nav-link {
     color: white;
     font-weight: bolder;
-    /* Añadir una transición suave para el efecto hover */
+
     transition: all 0.2s ease-in-out; 
 }
 
-/* Modificación de los estilos de Hover y Activo */
+
 .nav-link:hover,
 .nav-link.active {
-    color: blue; /* Mantener el color azul que quieres */
-    background-color: transparent; /* Asegurar que no haya un fondo inesperado */
+    color: blue;
+    background-color: transparent;
 }
 
-/* 1. Ajuste para que los títulos y logo estén a la izquierda en móvil */
-/* Usamos el contenedor más grande para centrar el logo y títulos en móvil, 
-   o al menos para que no interfieran con la hamburguesa. */
+
 .container-fluid {
-    /* Permitir que los elementos dentro se alineen correctamente */
+
     display: flex;
-    justify-content: space-between; /* Mantiene logo/títulos a la izquierda y hamburguesa a la derecha */
+    justify-content: space-between;
     align-items: center;
 }
 
-/* 2. Estilos para el Menú Desplegado (Modo Móvil) */
+
 .navbar-collapse.show {
-    /* Damos un fondo contrastante al menú desplegado para que el texto blanco sea visible */
-    background-color:  rgb(255, 72, 0); /* Fondo blanco */
-    padding: 10px 0; /* Espaciado dentro del menú */
-    /* Aseguramos que se muestre en toda su anchura */
+    background-color:  rgb(255, 72, 0);
+    padding: 10px 0;
     width: 100%;
 }
 
-/* 3. Visibilidad de los Enlaces en el Menú Desplegado */
 .navbar-collapse.show .nav-link {
     color: black !important; 
     text-align: right; 
