@@ -1,0 +1,90 @@
+.navbar{
+                                                  
+    height: 170px;
+}
+.titulo1 {
+    color: orange;
+    font-weight: 900;
+    font-size: xx-large;
+    padding-left: 5px;
+    padding-right: 15px;
+    margin-left: 190px;
+    line-height: 0.85;
+    text-decoration: none;
+}
+.titulo2 {
+    color:yellow;
+    font-weight: 900;
+    font-size: 70px;
+    padding-left: 5px;
+    padding-right: 15px;
+    margin-left: 190px;
+    line-height: 0.85;
+    text-decoration: none;
+}
+
+.LogoContainer{
+    position: absolute;
+    left: 20px;
+    top: 90px;
+    transform: translateY(-50%);
+    z-index: 1001;
+
+    width: 180px;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-item{
+    font-size: x-large;
+    color: orange;
+    padding: 20px;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bolder;
+    /* Añadir una transición suave para el efecto hover */
+    transition: all 0.2s ease-in-out; 
+}
+
+/* Modificación de los estilos de Hover y Activo */
+.nav-link:hover,
+.nav-link.active {
+    color: blue; /* Mantener el color azul que quieres */
+    background-color: transparent; /* Asegurar que no haya un fondo inesperado */
+}
+
+/* 1. Ajuste para que los títulos y logo estén a la izquierda en móvil */
+/* Usamos el contenedor más grande para centrar el logo y títulos en móvil, 
+   o al menos para que no interfieran con la hamburguesa. */
+.container-fluid {
+    /* Permitir que los elementos dentro se alineen correctamente */
+    display: flex;
+    justify-content: space-between; /* Mantiene logo/títulos a la izquierda y hamburguesa a la derecha */
+    align-items: center;
+}
+
+/* 2. Estilos para el Menú Desplegado (Modo Móvil) */
+.navbar-collapse.show {
+    /* Damos un fondo contrastante al menú desplegado para que el texto blanco sea visible */
+    background-color:  rgb(255, 72, 0); /* Fondo blanco */
+    padding: 10px 0; /* Espaciado dentro del menú */
+    /* Aseguramos que se muestre en toda su anchura */
+    width: 100%;
+}
+
+/* 3. Visibilidad de los Enlaces en el Menú Desplegado */
+.navbar-collapse.show .nav-link {
+    color: black !important; 
+    text-align: right; 
+    padding-right: 20px; 
+    padding-left: 20px;
+}
+.navbar-collapse.show .nav-link:hover,
+.navbar-collapse.show .nav-link.active {
+    color: blue !important;
+}
