@@ -1,0 +1,89 @@
+html, body {
+    height: 10px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.content-wrapper {
+    flex-grow: 1;
+}
+.main-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    background-image: linear-gradient(to right, blue, rgb(255, 72, 0));
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 999;
+}
+.footer-contenido p {
+    margin: 3px 0;
+}
+.comunicacion-flotante {
+    position: fixed;
+    bottom: 30px; 
+    right: 30px; 
+    z-index: 1000; 
+    font-family: Arial, sans-serif;
+}
+.icono-principal {
+    background-color: #4CAF50;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.opciones-contacto {
+    position: absolute;
+    bottom: 65px; 
+    right: 0;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+    text-align: right;
+}
+.comunicacion-flotante:hover .opciones-contacto {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.opciones-contacto a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.opcion-whatsapp {
+    background-color: #25D366;
+}
+.opcion-correo {
+    background-color: #C71610; 
+}
+.opciones-contacto span {
+    margin-left: 8px;
+    font-size: 18px;
+}

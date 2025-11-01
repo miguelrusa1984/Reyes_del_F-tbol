@@ -1,1 +1,36 @@
-<p>footer works!</p>
+<div class="content-wrapper">
+</div>
+
+<div class="comunicacion-flotante">
+    <div class="icono-principal">
+        <span>💬</span>
+    </div>
+
+    <div class="opciones-contacto">
+        <a href="mailto:miguelrusa1984@gmail.com?subject=Consulta desde Reyes del Fútbol&body=Hola Miguel, me contacto contigo desde tu página web. Mi consulta es la siguiente:"
+            class="opcion-correo" target="_blank">
+            <span>📧</span> Mensaje por Correo
+        </a>
+        <a href="https://wa.me/573132693492" class="opcion-whatsapp" target="_blank">
+            <span>📱 </span> Mensaje por WhathApp
+        </a>
+    </div>
+</div>
+
+
+
+<footer class="main-footer">
+    <div class="footer-contenido">
+        <p>
+            &copy; 2025 Todos los derechos reservados. -
+            <a>Diseñado por: @miguelrusa1984</a>
+        </p>
+
+    </div>
+</footer>
+
+<script>
+    document.querySelector('.icono-principal').addEventListener('click', function () {
+        document.querySelector('.opciones-contacto').classList.toggle('activo');
+    });
+</script>
