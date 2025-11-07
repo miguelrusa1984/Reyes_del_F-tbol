@@ -16,9 +16,8 @@ body {
     left: 0;
     width: 100%;
     
-    background-image: linear-gradient(to right, blue, rgb(255, 72, 0));
     color: white;
-    padding: 15px 40px;
+    padding: 5px 40px;
     text-align: center;
     font-size: 14px;
     z-index: 999;
